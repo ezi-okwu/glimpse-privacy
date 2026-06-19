@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Glimpse Privacy Policy</title>
+<style>
+  body { font: 16px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; color: #1c1726; background: #faf9fc; margin: 0; padding: 40px 20px; }
+  main { max-width: 760px; margin: 0 auto; background: #fff; border: 1px solid #e8e3f2; border-radius: 14px; padding: 40px 44px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 30px 0 8px; color: #4c1d95; }
+  .meta { color: #6b6280; font-size: 14px; margin-bottom: 8px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code { background: #f0ecf9; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  a { color: #6d28d9; }
+  footer { margin-top: 32px; color: #8a82a0; font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Glimpse Privacy Policy</h1>
+  <p class="meta">Last updated: June 15, 2026</p>
+  <p class="meta">Provided by UWAGAPRIME LLC. Contact: <a href="mailto:uwagaprimellc@gmail.com">uwagaprimellc@gmail.com</a></p>
+
+  <p>This policy explains what the Glimpse browser extension does with data. Glimpse is a workplace tool that an employer installs on company devices. It helps a business see when sensitive information is being entered into public AI tools such as ChatGPT, Claude, Gemini, Copilot, and Perplexity.</p>
+
+  <h2>What data Glimpse handles</h2>
+  <p>When an employee uses one of the supported AI tools, the extension reads the text submitted in the prompt, and on ChatGPT it also reads the text of documents attached to the chat, so it can check for sensitive information. Glimpse does not read general web browsing, keystrokes outside these AI tools, passwords, or personal accounts.</p>
+
+  <h2>How the data is processed</h2>
+  <ul>
+    <li>Before anything leaves the device, Glimpse masks common structured secrets such as Social Security numbers, card numbers, emails, and API keys, replacing them with placeholders like <code>[ssn]</code>.</li>
+    <li>On supported machines, the analysis runs on the device itself using the browser's built-in AI, so the prompt is not sent anywhere.</li>
+    <li>On devices that cannot run the on-device model, only the masked version of the text is sent to a backend service operated by UWAGAPRIME LLC to score the risk. In that case the masked text may be processed by an AI provider (Anthropic) acting as a service provider.</li>
+    <li>Only prompts judged to carry real risk are recorded. Harmless prompts are not stored.</li>
+  </ul>
+
+  <h2>What is recorded and where it goes</h2>
+  <p>When a prompt is flagged, Glimpse records an event containing the AI tool used, the risk level, the category of data (for example "client data"), the time, and a short masked sample of the text. These events are shown only on a password-protected dashboard available to the employer who deployed Glimpse. Records contain only masked samples, not the full prompt, and structured secrets are masked before anything is sent.</p>
+
+  <h2>Data sharing</h2>
+  <p>Glimpse does not sell user data, does not transfer it to third parties for purposes unrelated to the tool's single purpose, and does not use it for advertising or creditworthiness. The only third party involved is the AI provider used to score masked text on devices that fall back to the backend, acting solely as a processing service.</p>
+
+  <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
+  <h2>Data retention</h2>
+  <p>Recorded events are kept for 90 days by default and then deleted automatically. An employer can request a shorter window, or a longer one where a specific compliance rule requires it, and can have events deleted on request at any time.</p>
+
+  <h2>Security</h2>
+  <p>Data travels over encrypted connections. Structured secrets are masked on the device before anything is sent, and stored records keep only a masked sample rather than the full prompt.</p>
+
+  <h2>Who controls the data</h2>
+  <p>The employer who installs Glimpse controls the data it produces. UWAGAPRIME LLC provides the software and hosting on the employer's behalf. Employees with questions should contact their employer first.</p>
+
+  <h2>Your choices</h2>
+  <p>Glimpse can be configured to run fully on the device, with no data sent off the machine, if the employer chooses that mode. Employees should refer to their employer's own policy for how the tool is used in their workplace.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>This policy may be updated. The date at the top reflects the latest version.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to <a href="mailto:uwagaprimellc@gmail.com">uwagaprimellc@gmail.com</a>.</p>
+
+  <footer>UWAGAPRIME LLC</footer>
+</main>
+</body>
+</html>
